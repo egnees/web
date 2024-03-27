@@ -1,0 +1,105 @@
+{
+    "ms_per_slide": 10,
+    "title": "Slider",
+    "content": "<svg id=\"inner-content\" viewBox=\"0 0 500 500\"><rect id=\"rect\" x=100 y=100 height=100 width=100></rect></svg>",
+    "slides": [
+        {
+            "from_prev_changes": [
+                {
+                    "owner_id": "rect",
+                    "name": "x",
+                    "value": "100"
+                },
+                {
+                    "owner_id": "rect",
+                    "name": "y",
+                    "value": "100"
+                },
+                {
+                    "owner_id": "rect",
+                    "name": "fill",
+                    "value": "black"
+                }
+            ],
+            "from_next_changes": [
+                {
+                    "owner_id": "rect",
+                    "name": "x",
+                    "value": "100"
+                },
+                {
+                    "owner_id": "rect",
+                    "name": "y",
+                    "value": "100"
+                },
+                {
+                    "owner_id": "rect",
+                    "name": "fill",
+                    "value": "black"
+                }
+            ]
+        },
+        {
+            "from_prev_changes": [
+                {
+                    "owner_id": "rect",
+                    "name": "x",
+                    "value": "200"
+                },
+                {
+                    "owner_id": "rect",
+                    "name": "y",
+                    "value": "200"
+                },
+                {
+                    "owner_id": "rect",
+                    "name": "fill",
+                    "value": "red"
+                }
+            ],
+            "from_next_changes": [
+                {
+                    "owner_id": "rect",
+                    "name": "x",
+                    "value": "200"
+                },
+                {
+                    "owner_id": "rect",
+                    "name": "y",
+                    "value": "200"
+                },
+                {
+                    "owner_id": "rect",
+                    "name": "fill",
+                    "value": "red"
+                }
+            ]
+        },
+        {
+            "from_prev_changes": [
+                {
+                    "owner_id": "rect",
+                    "name": "x",
+                    "value": "100"
+                },
+                {
+                    "owner_id": "rect",
+                    "name": "y",
+                    "value": "100"
+                },
+                {
+                    "owner_id": "rect",
+                    "name": "fill",
+                    "value": "blue"
+                }
+            ],
+            "from_next_changes": [
+                {
+                    "owner_id": "rect",
+                    "name": "fill",
+                    "value": "blue"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+.flex-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#header {
+    height: 10%;
+}
+
+#slider-title {
+    font-size: 2.5vh;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 1%;
+}
+
+#load-data-button {
+    height: 4vh;
+    max-width: 3vw;
+}
+
+#content {
+    height: 80%;
+    outline: solid black 1px;
+    background: linear-gradient(#83a4d4, #b6fbff)
+}
+
+#inner-content {
+    max-height: 95%;
+    max-width: 95%;
+    outline: solid black 1px;
+    background-color: white;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.control-button {
+    height: 4vh;
+    margin: 2%;
+    width: 5vw;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%
+}
+
+#slider-info {
+    height: 50%;
+}
+
+p {
+    margin: 5px;
+}

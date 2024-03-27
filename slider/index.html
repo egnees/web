@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Slider</title>
+</head>
+
+<body>
+    <input type="file" id="file-input" style="display:none">
+
+    <div id="wrapper" style="height: 75vh">
+        <div class="flex-center" id="header">
+            <p id="slider-title">Undefined</p>
+            <button id="load-data-button">Load</button>
+        </div>
+
+        <div class="flex-center" id="content">
+            <p id="inner-content" style="padding: 1%; border-radius: 1%;">Content will be here</p>
+        </div>
+
+        <div id="footer">
+            <div id="buttons">
+                <button class="control-button" id="speed-down-button">&lt&lt</button>
+                <button class="control-button" id="prev-button">&lt</button>
+                <button class="control-button" id="play-stop-button">Play/Stop</button>
+                <button class="control-button" id="next-button">&gt</button>
+                <button class="control-button" id="speed-up-button">&gt&gt</button>
+            </div>
+            <div id="slider-info">
+                Slide: 0/0, slides/s: 100
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
