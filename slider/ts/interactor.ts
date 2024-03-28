@@ -85,9 +85,9 @@ class Interactor {
                 was_playing = true;
             }
 
-            this.slide_time -= 5.0;
-            if (this.slide_time < 1.0) {
-                this.slide_time = 1.0;
+            this.slide_time -= 5;
+            if (this.slide_time < 1) {
+                this.slide_time = 1;
             }
 
             this.update_slider_info();
@@ -106,7 +106,7 @@ class Interactor {
                 was_playing = true;
             }
 
-            this.slide_time += 5.0;
+            this.slide_time += 5;
 
             this.update_slider_info();
 
@@ -118,16 +118,21 @@ class Interactor {
 
     start_play() {
         console.assert(!this.is_playing);
-        this.playing_timer = setInterval(() => {
-            this.slider.next_slide(); this.update_slider_info();
-        }, this.slide_time);
         this.is_playing = true;
+        this.playing_timer = setInterval(() => {
+            if (this.slider.is_last_slide()) {
+                this.stop_play();
+            } else {
+                this.slider.next_slide();
+                this.update_slider_info();
+            }
+        }, this.slide_time);
     }
 
     stop_play() {
         console.assert(this.is_playing);
-        clearInterval(this.playing_timer);
         this.is_playing = false;
+        clearInterval(this.playing_timer);
     }
 
     update_slider_info() {

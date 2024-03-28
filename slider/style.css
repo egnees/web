@@ -22,7 +22,7 @@
 #content {
     height: 80%;
     outline: solid black 1px;
-    background: linear-gradient(#83a4d4, #b6fbff)
+    background: linear-gradient(#83a4d4, #b6fbff);
 }
 
 #inner-content {
@@ -30,6 +30,8 @@
     max-width: 95%;
     outline: solid black 1px;
     background-color: white;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5%;
 }
 
 #footer {
